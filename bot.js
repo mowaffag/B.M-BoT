@@ -68,7 +68,7 @@ msg.delete();
 }
 });
   client.on('guildMemberAdd', member => {
-        let channel = member.guild.channels.find('name', '『-welcome-』');
+        let channel = member.guild.channels.find('name', '1-event-1');
         let memberavatar = member.user.avatarURL
           if (!channel) return;
         let embed = new Discord.RichEmbed()
@@ -99,7 +99,7 @@ msg.delete();
             .setColor('RED')
             .setFooter(`==== نــتــمــنــآ لــكــم آســتــمـــتــآع ====`, 'https://cdn.discordapp.com/attachments/397818254439219217/399292026782351381/shy.png')
         
-        var channel =member.guild.channels.find('name', '『-welcome-』')
+        var channel =member.guild.channels.find('name', '1-event-1')
         if (!channel) return;
         channel.send({embed : embed});
         })
